@@ -24,6 +24,11 @@
 		BA869F361716D94900546090 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA869F0E1716D94800546090 /* Foundation.framework */; };
 		BA869F3E1716D94900546090 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = BA869F3C1716D94900546090 /* InfoPlist.strings */; };
 		BA869F411716D94900546090 /* CamCaptureTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BA869F401716D94900546090 /* CamCaptureTests.m */; };
+		BA869F4D1716D96800546090 /* CamCapture.m in Sources */ = {isa = PBXBuildFile; fileRef = BA869F4C1716D96800546090 /* CamCapture.m */; };
+		BA869F4F1716D9A500546090 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA869F4E1716D9A500546090 /* AVFoundation.framework */; };
+		BA869F511716D9AD00546090 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA869F501716D9AD00546090 /* AudioToolbox.framework */; };
+		BA869F531716D9B500546090 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA869F521716D9B500546090 /* CoreVideo.framework */; };
+		BA869F551716D9BE00546090 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA869F541716D9BE00546090 /* CoreMedia.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +65,12 @@
 		BA869F3D1716D94900546090 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		BA869F3F1716D94900546090 /* CamCaptureTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CamCaptureTests.h; sourceTree = "<group>"; };
 		BA869F401716D94900546090 /* CamCaptureTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CamCaptureTests.m; sourceTree = "<group>"; };
+		BA869F4B1716D96800546090 /* CamCapture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CamCapture.h; path = ../../EggProto/EggProto/CamCapture.h; sourceTree = "<group>"; };
+		BA869F4C1716D96800546090 /* CamCapture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CamCapture.m; path = ../../EggProto/EggProto/CamCapture.m; sourceTree = "<group>"; };
+		BA869F4E1716D9A500546090 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		BA869F501716D9AD00546090 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		BA869F521716D9B500546090 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
+		BA869F541716D9BE00546090 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +78,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BA869F551716D9BE00546090 /* CoreMedia.framework in Frameworks */,
+				BA869F531716D9B500546090 /* CoreVideo.framework in Frameworks */,
+				BA869F511716D9AD00546090 /* AudioToolbox.framework in Frameworks */,
+				BA869F4F1716D9A500546090 /* AVFoundation.framework in Frameworks */,
 				BA869F0D1716D94800546090 /* UIKit.framework in Frameworks */,
 				BA869F0F1716D94800546090 /* Foundation.framework in Frameworks */,
 				BA869F111716D94900546090 /* CoreGraphics.framework in Frameworks */,
@@ -89,6 +104,10 @@
 		BA869F001716D94800546090 = {
 			isa = PBXGroup;
 			children = (
+				BA869F541716D9BE00546090 /* CoreMedia.framework */,
+				BA869F521716D9B500546090 /* CoreVideo.framework */,
+				BA869F501716D9AD00546090 /* AudioToolbox.framework */,
+				BA869F4E1716D9A500546090 /* AVFoundation.framework */,
 				BA869F121716D94900546090 /* CamCapture */,
 				BA869F391716D94900546090 /* CamCaptureTests */,
 				BA869F0B1716D94800546090 /* Frameworks */,
@@ -119,6 +138,7 @@
 		BA869F121716D94900546090 /* CamCapture */ = {
 			isa = PBXGroup;
 			children = (
+				BA869F4A1716D95400546090 /* Util */,
 				BA869F1B1716D94900546090 /* CamCaptureAppDelegate.h */,
 				BA869F1C1716D94900546090 /* CamCaptureAppDelegate.m */,
 				BA869F241716D94900546090 /* MainStoryboard_iPhone.storyboard */,
@@ -161,6 +181,15 @@
 				BA869F3C1716D94900546090 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		BA869F4A1716D95400546090 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				BA869F4B1716D96800546090 /* CamCapture.h */,
+				BA869F4C1716D96800546090 /* CamCapture.m */,
+			);
+			name = Util;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -278,6 +307,7 @@
 				BA869F191716D94900546090 /* main.m in Sources */,
 				BA869F1D1716D94900546090 /* CamCaptureAppDelegate.m in Sources */,
 				BA869F2C1716D94900546090 /* CamCaptureViewController.m in Sources */,
+				BA869F4D1716D96800546090 /* CamCapture.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
